@@ -1,6 +1,6 @@
 spring:
   application:
-    name: Data Extrator Microservice
+    name: Data Extractor Microservice
 logging:
   level:
     ROOT: WARN
