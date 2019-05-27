@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: Data Extrator Microservice
+logging:
+  level:
+    ROOT: WARN
+---
+spring:
+  profiles: dev
+logging:
+  level:
+    ROOT: DEBUG
+    org:
+      apache:
+        http: TRACE
+---
+spring:
+  profiles: test
+server:
+  port: 9000
+logging:
+  level:
+    ROOT: INFO
