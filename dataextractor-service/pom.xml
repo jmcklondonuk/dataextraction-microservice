@@ -5,7 +5,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.1.4.RELEASE</version>
-        <relativePath /> <!-- load parent pom from repository -->
+        <relativePath/> <!-- load parent pom from repository -->
     </parent>
     <artifactId>dataextractor-service</artifactId>
     <groupId>com.embedit.services</groupId>
@@ -13,6 +13,8 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <junit.version>4.12</junit.version>
+        <mockito.version>2.23.4</mockito.version>
     </properties>
 
     <dependencyManagement>
@@ -70,13 +72,13 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
-            <version>2.23.4</version>
+            <version>${mockito.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
